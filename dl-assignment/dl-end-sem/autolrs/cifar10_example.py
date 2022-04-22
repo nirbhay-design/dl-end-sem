@@ -8,7 +8,6 @@ from torch.optim.lr_scheduler import MultiStepLR
 
 
 import torchvision
-
 import torchvision.transforms as transforms
 
 import os
