@@ -69,7 +69,7 @@ def plot_client_file():
                 continue;
 
     plt.figure(figsize=(5,4))
-    plt.plot(epochs,acc)
+    plt.plot(epochs,acc,color='red')
     plt.xlabel('epochs')
     plt.ylabel('accuracy')
     if flag == 10:
@@ -81,7 +81,7 @@ def plot_client_file():
     plt.show()
 
     plt.figure(figsize=(5,4))
-    plt.plot(iterations,lrs)
+    plt.plot(iterations,lrs,color='orange')
     plt.xlabel('iterations')
     plt.ylabel('learning rate')
     if flag == 10:
@@ -95,5 +95,5 @@ def plot_client_file():
         
 
 plot_client_file()
-# plot_loss_vs_iterations()
+plot_loss_vs_iterations()
 
